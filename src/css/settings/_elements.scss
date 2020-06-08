@@ -12,11 +12,11 @@ a {
   color: inherit;
   transition: 0.2s;
   &:hover {
-    color: $sky;
   }
 }
 
 body {
   font-family: $font-base;
-  color: $dark-light;
+  color: $gray;
+  font-size: 17pt;
 }

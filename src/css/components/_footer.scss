@@ -1,75 +1,37 @@
 .footer {
-  padding-top: 50px;
-  border-top: 1px solid $gray-lighter;
-  font-family: $font-poppins;
-  font-size: 13px;
-  &__title {
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 20px;
-    color: $dark;
-    &-col {
-      font-size: 11px;
-      text-transform: uppercase;
-      font-weight: 800;
-      margin-bottom: 34px;
-      color: $dark-light;
+  &-form {
+    background-image: url(../images/bg-footer.png);
+    font-size: 35px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 70px 0;
+    .row {
+      align-items: flex-end;
     }
-  }
-  &__menu{
-    li{
-      margin-bottom: 10px;
-    }
-  }
-  .copyright{
-    background-color: $sky-white;
-    text-align: center;
-    height: 50px;
-    padding: 14px 0;
-    color: $gray;
-  }
-}
-
-.info{
-  font-size: 13px;
-}
-
-.subscribe{
-  text-align: center;
-  background-color: #004f71;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: $white;
-  &__title{
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-  .wrapper{
-    display: inline-block;
-    background-color: rgba(216, 216, 216, 0.1);
-    border-radius: 33px;
-    height: 43px;
-  }
-  input{
-    background-color: transparent;
-    color: $white;
-    padding: 8px 20px;
-    width: 320px;
-    border: none;
-    outline: none;
-    opacity: 0.5;
-    height: 100%;
-    &::placeholder {
-      color: rgba(255, 255, 255, 0.5);
-    }
-    @media screen and (max-width: 520px) {
-      width: 100%;
-    }
-  }
-  button{
-    vertical-align: bottom;
-    @media screen and (max-width: 520px) {
-      margin-top: 20px;
+    .form {
+      display: flex;
+      background-color: #30302f;
+      border-radius: 5px;
+      > * {
+        height: 60px;
+        font-size: 17px;
+        color: #ffffff;
+      }
+      input {
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        padding: 0 20px;
+        flex-grow: 1;
+      }
+      button {
+        margin-left: auto;
+        background-color: rgb(42,141,81);
+        border: none;
+        border-radius: 5px;
+        font-weight: 500;
+        padding: 0 20px;
+      }
     }
   }
 }

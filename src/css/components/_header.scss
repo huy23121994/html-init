@@ -1,64 +1,35 @@
 .header {
-  border-bottom: 1px solid $gray-lighter;
-  min-height: 60px;
-  padding-top: 9px;
-  @media screen and (min-width: $breakpoint-lg) {
-    padding-top: 0;
-    height: 60px;
-  }
-  &__logo {
-    width: 120px;
-  }
-  .nav {
-    &bar {
-      padding: 0;
-      &-nav {
-        margin-top: 10px;
-        @media screen and (min-width: $breakpoint-lg) {
-          margin-top: 0;
-        }
+  color: $dark;
+  font-size: 22px;
+  .nav{
+    &bar-brand {
+      font-size: 30px;
+      font-family: $font-montserrat;
+    }
+    &-item{
+      font-weight: 600;
+      &:not(:first-child) {
+        margin-left: 63px;
       }
     }
-    &-item {
-      margin-left: 20px;
-      @media screen and (min-width: $breakpoint-lg) {
-        /* width: 100px; */
-      }
-      &:last-child {
-        a {
-          color: $sky;
-          font-weight: 600;
-          @media screen and (min-width: $breakpoint-lg) {
-            padding-left: 20px;
-            &:hover {
-              border-color: transparent;
-              color: $sky-dark;
-            }
-          }
-        }
-        @media screen and (min-width: $breakpoint-lg) {
-          border-left: 1px solid $gray-lighter;
-          width: auto;
-        }
-      }
+  }
+  .banner {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 690px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    .title {
+      font-size: 80px;
+      line-height: 80px;
+      width: 450px;
+      font-weight: 700;
     }
-    &-link {
-      padding: 10px 0px;
-      height: 60px;
-      display: block;
-      border-bottom: 3px solid transparent;
-      @media screen and (min-width: $breakpoint-lg) {
-        justify-content: center;
-        display: flex;
-        align-items: center;
-      }
-      &.active {
-        border-color: $sky;
-      }
-      &:hover {
-        text-decoration: none;
-        border-color: $sky;
-      }
+    .subtitle {
+      opacity: 0.6;
+      margin: 20px 0 50px;
     }
   }
 }
