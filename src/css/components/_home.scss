@@ -1,13 +1,33 @@
 .features {
   background-color: #f6f6f6;
+  .row {
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   &-item {
-    display: flex;
-    margin-top: 30px;
     margin-bottom: 70px;
+    text-align: center;
+    @media screen and (min-width: $breakpoint-swiper) {
+      text-align: left;
+      display: flex;
+    }
     &-icon {
-      flex-basis: 155px;
-      margin-top: 10px;
+      display: none;
+      @media screen and (min-width: $breakpoint-swiper) {
+        display: block;
+        flex-basis: 155px;
+        margin-top: 10px;
+        margin-right: 20px;
+      }
+    }
+    &-img {
+      height: 300px;
+      margin-bottom: 40px;
+      @media screen and (min-width: $breakpoint-swiper) {
+        display: none;
+      }
     }
     &-title {
       color: $dark;
@@ -19,6 +39,20 @@
       margin-top: 10px;
       font-size: 16px;
       color: $gray;
+    }
+  }
+
+  &-left,
+  &-right {
+    @media screen and (min-width: $breakpoint-swiper) {
+      width: 315px;
+    }
+  }
+
+  &-img {
+    display: none;
+    @media screen and (min-width: $breakpoint-swiper) {
+      display: block;
     }
   }
 }
