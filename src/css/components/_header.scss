@@ -10,7 +10,9 @@
     &-item {
       font-weight: 500;
       &:not(:first-child) {
-        margin-left: 63px;
+        @media screen and (min-width: $breakpoint-md) {
+          margin-left: 63px;
+        }
       }
     }
   }

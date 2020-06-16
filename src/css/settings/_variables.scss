@@ -1,10 +1,12 @@
 /* ============ Fonts ============ */
-$font-base: 'AvenirNextLTPro', sans-serif;
-$font-montserrat: 'Montserrat', sans-serif;
+$font-base: "AvenirNextLTPro", sans-serif;
+$font-montserrat: "Montserrat", sans-serif;
 /* ============ Colors ============ */
 $gray: rgb(100, 100, 100);
 $dark: rgb(20, 20, 20);
 $gray-1: #f6f6f6;
+$gray-2: rgb(184, 184, 184);
+$green: rgb(42, 141, 81);
 /* ============ Breakpoints ============ */
 $breakpoint-xl: 1200px;
 $breakpoint-lg: 992px;
@@ -15,7 +17,7 @@ $breakpoint-xs: 0;
 $breakpoint-swiper: 1120px;
 
 /* ============ Settings ============ */
-$image-path: '~src/images/';
+$image-path: "~src/images/";
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -26,10 +28,11 @@ $grid-breakpoints: (
   sm: $breakpoint-sm,
   md: $breakpoint-md,
   lg: $breakpoint-lg,
-  xl: $breakpoint-xl
+  xl: $breakpoint-xl,
 );
 // $grid-gutter-width: 20px;
 
 $theme-colors: (
-  
+  gray: $gray-2,
+  green: $green,
 );

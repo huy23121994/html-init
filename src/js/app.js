@@ -11,6 +11,10 @@ $(document).ready(function () {
   $(window).resize(function () {
     makeSwipe();
   });
+
+  $('.features-item').click(function() {
+    showImg(this)
+  })
 });
 
 var makeSwipe = (function () {
@@ -32,3 +36,10 @@ var makeSwipe = (function () {
     }
   };
 })();
+
+var showImg = function (context) {
+  if (window.innerWidth >= 1120) {
+    var url = $(context).find('.features-item-img').attr('src')
+    $('.features-img img').hide().attr('src', url).fadeIn()
+  }
+};
