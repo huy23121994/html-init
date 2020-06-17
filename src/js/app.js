@@ -40,6 +40,8 @@ var makeSwipe = (function () {
 var showImg = function (context) {
   if (window.innerWidth >= 1120) {
     var url = $(context).find('.features-item-img').attr('src')
-    $('.features-img img').hide().attr('src', url).fadeIn()
+    $('.features-img img').fadeOut(function() {
+      $(this).attr('src', url).fadeIn()
+    })
   }
 };
