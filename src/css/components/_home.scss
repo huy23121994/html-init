@@ -1,14 +1,4 @@
 .features {
-  background-color: #f6f6f6;
-  .row {
-    justify-content: space-between;
-    margin-left: 0;
-    margin-right: 0;
-    @media screen and (min-width: $breakpoint-swiper) {
-      margin-top: 70px;
-    }
-  }
-
   &-item {
     margin-bottom: 50px;
     text-align: center;
@@ -16,16 +6,18 @@
     @media screen and (min-width: $breakpoint-swiper) {
       text-align: left;
       display: flex;
-      margin-bottom: 70px;
+      margin-bottom: 30px;
     }
     &-icon {
       display: none;
       @media screen and (min-width: $breakpoint-swiper) {
         display: block;
-        flex-basis: 155px;
         margin-top: 10px;
         margin-right: 20px;
       }
+    }
+    &-content {
+      flex: 1;
     }
     &-img {
       height: 300px;
@@ -36,21 +28,14 @@
     }
     &-title {
       color: $dark;
-      font-weight: 500;
-      line-height: 30px;
-      font-size: 22px;
+      line-height: 24px;
+      font-size: 16px;
+      font-weight: 700;
     }
     &-text {
       margin-top: 10px;
       font-size: 16px;
       color: $gray;
-    }
-  }
-
-  &-left,
-  &-right {
-    @media screen and (min-width: $breakpoint-swiper) {
-      width: 315px;
     }
   }
 
@@ -66,36 +51,94 @@
   }
 }
 
-.partner {
-  &-items {
-    align-items: flex-end;
-  }
-
-  &-item {
-    margin-top: 60px;
-    position: relative;
-    display: inline-block;
-    &-content {
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      color: #fff;
-      background-color: rgba(42, 141, 81, 0.7);
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transition: 0.4s;
-      cursor: default;
-      &:hover {
-        opacity: 1;
-      }
-    }
+.course {
+  background-color: $black;
+  color: $gray-3;
+  font-weight: 300;
+  .section{
     &-title {
-      font-size: 22px;
-      line-height: 30px;
-      font-weight: 500;
+      color: $white;
+    }
+    &-subtitle {
+      color: $gray-3;
+    }
+  }
+}
+
+.booking {
+  background: url(../images/mask1.png) no-repeat;
+  background-position: bottom left;
+  .media {
+    h5 {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+      color: $black;
+    }
+    &-body {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .container {
+    background-color: $gray-4;
+    padding: 60px 100px;
+  }
+  
+}
+
+.tour {
+  background: url(../images/mask2.png) no-repeat;
+  background-position: bottom right;
+}
+
+.bussiness {
+  .section {
+    &-title {
+      color: $white;
+      opacity: .8;
+    }
+    &-subtitle {
+      color: $white;
+      opacity: .4;
+    }
+  }
+  background-color: $green-2;
+  color: $white;
+  p{
+    opacity: .4;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+.contact {
+  background: url(../images/mask2.png) no-repeat;
+  background-position: bottom left;
+  .form {
+    background-image: url(../images/bgr-form.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    padding: 56px 80px;
+    color: $gray-3;
+    .section-title {
+      color: $white;
+    }
+    .form-wp{
+      display: flex;
+      margin-top: 50px;
+      background-color: #30302f;
+      border-radius: 5px;
+      input {
+        display: inline-block;
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        padding: 0 16px;
+        font-size: 14px;
+      }
     }
   }
 }

@@ -1,58 +1,11 @@
 .footer {
-  &-form {
-    background-image: url(../images/bg-footer.png);
-    font-size: 22px;
-    font-weight: 400;
-    color: #ffffff;
-    padding: 70px 0;
-    @media screen and (min-width: $breakpoint-md) {
-      font-size: 35px;
-    }
-    .row {
-      align-items: flex-end;
-    }
-    .form {
-      display: flex;
-      border-radius: 5px;
-      margin-top: 20px;
-      flex-direction: column;
-      @media screen and (min-width: $breakpoint-md) {
-        flex-direction: row;
-        margin-top: 0;
-      }
-      > * {
-        height: 50px;
-        font-size: 17px;
-        color: #ffffff;
-        @media screen and (min-width: $breakpoint-md) {
-          height: 60px;
-        }
-      }
-      input {
-        background-color: transparent;
-        border: 0;
-        outline: none;
-        background-color: #30302f;
-        padding: 0 20px;
-        flex-grow: 1;
-      }
-      button {
-        background-color: rgb(42, 141, 81);
-        border: none;
-        border-radius: 5px;
-        padding: 0 20px;
-        margin-top: 20px;
-        @media screen and (min-width: $breakpoint-md) {
-          margin-top: 0;
-          margin-left: auto;
-        }
-      }
-    }
-  }
   &-nav {
-    padding: 40px 0;
-    @media screen and (min-width: $breakpoint-lg) {
-      padding: 100px 0;
+    .container {
+      padding: 40px 0;
+      border-top: 1px solid #ddd;
+      @media screen and (min-width: $breakpoint-lg) {
+        padding: 100px 0;
+      }
     }
     &-main {
       &-title {

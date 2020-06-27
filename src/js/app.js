@@ -1,10 +1,8 @@
 $(document).ready(function () {
   if ($(".swiper-wrapper").html() == "") {
     $(".swiper-wrapper").html("");
-    $(".features-left, .features-right").each(function () {
-      $(".swiper-wrapper").append($(this).html());
-    });
-    $(".swiper-wrapper .features-item").addClass("swiper-slide");
+    $(".swiper-wrapper").append($(".features-text .row").html());
+    $(".swiper-wrapper .features-item").addClass("swiper-slide").removeClass("col-6");
   }
 
   makeSwipe();
@@ -12,7 +10,7 @@ $(document).ready(function () {
     makeSwipe();
   });
 
-  $('.features-item').click(function() {
+  $('.features-item').click(function () {
     showImg(this)
   })
 });
@@ -40,7 +38,7 @@ var makeSwipe = (function () {
 var showImg = function (context) {
   if (window.innerWidth >= 1120) {
     var url = $(context).find('.features-item-img').attr('src')
-    $('.features-img img').fadeOut(function() {
+    $('.features-img img').fadeOut(function () {
       $(this).attr('src', url).fadeIn()
     })
   }

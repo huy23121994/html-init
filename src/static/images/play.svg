@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-18-Copy" transform="translate(1.000000, 0.000000)">
+            <path d="M58.0217622,49.6195493 L45.4555609,40.3798084 C45.3225325,40.2823291 45.1500722,40.2721654 45.0079442,40.3511652 C44.8653828,40.431089 44.7761194,40.5881646 44.7761194,40.7600237 L44.7761194,59.2395055 C44.7761194,59.4113647 44.8653828,59.5689023 45.0079442,59.648826 C45.0712085,59.683937 45.1405392,59.7014925 45.2094367,59.7014925 C45.2956668,59.7014925 45.3814636,59.6737733 45.4555609,59.6197208 L58.0217622,50.37998 C58.1391911,50.2935884 58.2089552,50.1517584 58.2089552,49.9997646 C58.2089552,49.8477709 58.1387578,49.7059409 58.0217622,49.6195493 L58.0217622,49.6195493 Z" id="Shape" fill="#FFFFFF"></path>
+            <ellipse id="Oval-2" stroke="#FFFFFF" stroke-width="0.5" transform="translate(49.253731, 50.000000) rotate(330.000000) translate(-49.253731, -50.000000) " cx="49.2537313" cy="50" rx="35.9531073" ry="36.0109719"></ellipse>
+        </g>
+    </g>
+</svg>

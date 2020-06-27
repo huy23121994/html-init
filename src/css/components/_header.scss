@@ -1,20 +1,74 @@
 .header {
-  color: $dark;
+  color: $white;
   font-size: 22px;
+  background-color: $dark;
   .nav {
-    &bar-brand {
-      font-size: 30px;
-      font-family: $font-montserrat;
-      color: rgb(51, 51, 51);
-    }
+		&bar {
+			padding: 0;
+			height: 60px;
+			&-brand {
+				font-size: 30px;
+				font-family: $font-montserrat;
+				color: $white;
+				padding: 0;
+			}
+			&-nav .nav-link {
+				color: $gray-3;
+				font-size: 14px;
+				font-weight: 300;
+				text-decoration: none;
+				&:hover, &:focus {
+					color: $white;
+				}
+			}
+			&-collapse {
+				height: 100%;
+			}
+		}
     &-item {
-      font-weight: 500;
       &:not(:first-child) {
         @media screen and (min-width: $breakpoint-md) {
-          margin-left: 63px;
+          margin-left: calc(25px - 1rem);
         }
-      }
-    }
+			}
+			&.active .nav-link{
+				color: $white;
+				font-weight: 700;
+			}
+		}
+		&-icon {
+			font-size: 17px;
+			.fa-search {
+				color: $gray-3;
+			}
+		}
+		&-right {
+			height: 100%;
+			margin-right: -15px;
+			padding-right: 15px;
+			padding-left: 30px;
+			display: flex;
+			align-items: center;
+			background-color: $black;
+			.nav-link {
+				color: $white;
+
+			}
+			.nav-item:nth-child(2) {
+				position: relative;
+				&::after {
+					content: '';
+					display: block;
+					width: 1px;
+					background-color: $white;
+					opacity: 0.16;
+					height: 30px;
+					position: absolute;
+					right: -5px;
+					top: 3px;
+				}
+			}
+		}
   }
   .banner {
     background-image: url(../images/banner.png);
@@ -28,7 +82,18 @@
     @media screen and (min-width: $breakpoint-md) {
       height: 690px;
       background-position: unset;
-    }
+		}
+		&__intro-text{
+			font-weight: 300;
+			font-size: 14px;
+			text-transform: uppercase;
+			span {
+				display: inline-block;
+				border-bottom: 1px solid $white;
+				opacity: 0.7;
+				cursor: pointer;
+			}
+		}
     .title {
       font-size: 28px;
       line-height: 40px;
@@ -37,7 +102,7 @@
       @media screen and (min-width: $breakpoint-md) {
         font-size: 80px;
         line-height: 80px;
-        width: 450px;
+				width: 670px;
       }
     }
     .subtitle {
