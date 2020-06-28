@@ -13,6 +13,10 @@ $(document).ready(function () {
   $('.features-item').click(function () {
     showImg(this)
   })
+
+  new StarRating('.star-rating', {
+    showText: false
+  });
 });
 
 var makeSwipe = (function () {

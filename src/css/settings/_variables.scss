@@ -11,9 +11,11 @@ $gray-1: #f6f6f6;
 $gray-2: rgb(184, 184, 184);
 $gray-3: rgb(153, 153, 153);
 $gray-4: rgb(246, 246, 246);
+$gray-5: rgb(200, 200, 200);
 $green: rgb(42, 141, 81);
 $green-1: rgb(37, 117, 69);
 $green-2: rgb(7, 44, 21);
+$red: rgb(253,79,48);
 
 /* ============ Breakpoints ============ */
 $breakpoint-xl: 1200px;
@@ -42,5 +44,5 @@ $grid-breakpoints: (
 
 $theme-colors: (
   gray: $gray-2,
-  green: $green,
+  success: $green,
 );

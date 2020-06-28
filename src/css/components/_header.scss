@@ -11,6 +11,9 @@
 				font-family: $font-montserrat;
 				color: $white;
 				padding: 0;
+				&:hover {
+					color: $white;
+				}
 			}
 			&-nav .nav-link {
 				color: $gray-3;

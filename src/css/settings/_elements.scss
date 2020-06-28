@@ -2,6 +2,12 @@ img {
   max-width: 100%;
 }
 
+input {
+  &[type="text"], &[type="password"], &[type="range"]{
+    width: 100%;
+  }
+}
+
 ul {
   margin: 0;
   padding: 0;
