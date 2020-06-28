@@ -14,6 +14,13 @@ $(document).ready(function () {
     showImg(this)
   })
 
+  $('.collapse').on('show.bs.collapse', function () {
+    $(this).parent().addClass('active');
+  })
+  $('.collapse').on('hide.bs.collapse', function () {
+    $(this).parent().removeClass('active');
+  })
+
   new StarRating('.star-rating', {
     showText: false
   });
@@ -35,6 +42,7 @@ $(document).ready(function () {
       swiper: galleryThumbs
     }
   });
+
 });
 
 var makeSwipe = (function () {
