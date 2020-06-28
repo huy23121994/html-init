@@ -5,14 +5,18 @@
 .semi-b{
   font-weight: 600!important;
 }
-
 .font-s-normal {
   font-size: 16px;
+}
+.font-s-medium {
+  font-size: 14px;
 }
 .font-s-small {
   font-size: 12px;
 }
-
+.align-sub {
+  vertical-align: sub;
+}
 .fas {
   vertical-align: middle;
 }
@@ -31,6 +35,14 @@
     color: #fff;
     &:hover {
       background-color: $green-1;
+      text-decoration: none;
+    }
+  }
+  &.btn-black {
+    background-color: $black;
+    color: #fff;
+    &:hover {
+      background-color: $dark;
       text-decoration: none;
     }
   }
@@ -144,6 +156,14 @@ section {
     label, input {
       cursor: pointer;
       margin-bottom: 0;
+    }
+  }
+  &-check-inline {
+    display: inline-block;
+    label {
+      margin-left: 9px;
+      position: relative;
+      top: -1px;
     }
   }
 }

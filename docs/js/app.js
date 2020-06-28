@@ -17,6 +17,24 @@ $(document).ready(function () {
   new StarRating('.star-rating', {
     showText: false
   });
+
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
 });
 
 var makeSwipe = (function () {
@@ -24,16 +42,16 @@ var makeSwipe = (function () {
   return function () {
     if (window.innerWidth < 1120) {
       $(".features .row").hide();
-      $(".swiper-container").show();
+      $(".index-swiper").show();
       if (!sw) {
-        sw = new Swiper(".swiper-container", {
+        sw = new Swiper(".index-swiper", {
           pagination: {
             el: ".swiper-pagination",
           },
         });
       }
     } else {
-      $(".swiper-container").hide();
+      $(".index-swiper").hide();
       $(".features .row").show();
     }
   };

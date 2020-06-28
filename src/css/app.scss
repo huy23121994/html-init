@@ -5,7 +5,6 @@
 @import "./node_modules/bootstrap/scss/mixins";
 @import "./node_modules/bootstrap/scss/transitions";
 
-@import "components/star-rating";
 @import "./settings/variables";
 @import "./node_modules/bootstrap/scss/grid";
 @import "./node_modules/bootstrap/scss/navbar";
@@ -23,3 +22,6 @@
 @import "components/footer";
 @import "components/home";
 @import "components/courses";
+@import "components/detail";
+
+@import "components/star-rating";
