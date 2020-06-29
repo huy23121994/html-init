@@ -28,6 +28,7 @@ $nav-breakpoint: 1400px;
 				color: $white;
 				&:hover {
 					color: $white;
+					text-decoration: none;
 				}
 				@media screen and (max-width: $nav-breakpoint) {
 					color: $black;
