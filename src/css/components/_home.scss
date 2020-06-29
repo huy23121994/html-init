@@ -142,7 +142,7 @@
   background-position: bottom left;
   @media screen and (max-width: $breakpoint-md) { 
     text-align: center;
-    padding: 56px 20px;
+    padding: 56px 0;
     .section-title{
       text-align: center!important;
     }
@@ -154,6 +154,9 @@
     color: $white;
     padding: 56px 80px;
     color: $gray-3;
+    @media screen and (max-width: $breakpoint-md) { 
+      padding: 56px 20px;
+    }
     .section-title {
       color: $white;
     }
