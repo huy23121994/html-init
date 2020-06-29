@@ -94,3 +94,9 @@ var handleMenu = (function () {
     }
   }
 })();
+
+var scrollx = function (element) {
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(element).offset().top
+  }, 300);
+}
