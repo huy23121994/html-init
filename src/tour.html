@@ -4,16 +4,24 @@
     <!-- sidebar -->
     <sidebar class="sidebar">
         <!-- filter box -->
-        <div class="sidebar-item filter">
+        <div class="sidebar-item filter" data-name="filterBox">
             <div class="sidebar-item__header filter__header">
-                <p class="filter__header-title">Filter</p>
+                <p class="filter__header-title hidden-xs">Filter</p>
+                <button data-name="closeFilter" class="button--accessibility filter__header-back-btn hidden-md">
+                    <i class="icon fas fa-chevron-left"></i> Back
+                </button>
                 <button class="button--accessibility filter__reset-btn">Reset</button>
             </div>
 
             <div class="sidebar-item__content">
                 <!-- Destination group -->
-                <div class="filter-group">
-                    <p class="filter-group__title">Destination</p>
+                <div class="filter-group" data-name="slideDown">
+                    <div class="filter-group__title" data-name="slideDownHeader">
+                        Destination
+                        <div class="slidedownIcon hidden-md hidden-lg">
+                            <i class="fas fa-chevron-down hidden-md"></i>
+                        </div>
+                    </div>
 
                     <!-- country filter -->
                     <div class="filter-item">
@@ -57,8 +65,13 @@
                 </div>
 
                 <!-- Price group -->
-                <div class="filter-group">
-                    <p class="filter-group__title">Price</p>
+                <div class="filter-group" data-name="slideDown">
+                    <div class="filter-group__title" data-name="slideDownHeader">
+                        Price
+                        <div class="slidedownIcon hidden-md hidden-lg">
+                            <i class="fas fa-chevron-down hidden-md"></i>
+                        </div>
+                    </div>
 
                     <div class="range-slider" data-type="rangeSlider">
                         <input class="range-slider__input" type="range" value="1000" min="10" max="10000">
@@ -71,8 +84,13 @@
                 </div>
                 
                 <!-- Days group -->
-                <div class="filter-group">
-                    <p class="filter-group__title">Days</p>
+                <div class="filter-group" data-name="slideDown">
+                    <div class="filter-group__title" data-name="slideDownHeader">
+                        Days
+                        <div class="slidedownIcon hidden-md hidden-lg">
+                            <i class="fas fa-chevron-down hidden-md"></i>
+                        </div>
+                    </div>
 
                     <div class="checkboxs">
                         <div class="checkboxs-item">
@@ -125,6 +143,14 @@
                     </div>
                 </div>
 
+                <div class="filter-bottom-box hidden-md hidden-lg">
+                    <div class="filter__result-count">191 courses</div>
+                    
+                    <button class="btn btn-success">
+                        View result
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -285,7 +311,7 @@
                                         <img src="http://unsplash.it/309/309" alt="Complete Golf">
                                     </div>
                                 </div>
-       tour                             <div class="textbox-01__content">
+                                <div class="textbox-01__content">
                                     <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
                                     <p class="textbox-01__price">1200$</p>
                                     <div class="textbox-01__infor">
@@ -347,6 +373,19 @@
     </sidebar>
 
     <div class="search-content">
+
+        <div class="filter-sort-box hidden-md hidden-lg">
+            <div class="filter-sort-box__filter" data-name="openFilter">
+                <i class="icon fas fa-filter"></i>
+                Filter
+            </div>
+
+            <div class="filter-sort-box__sort">
+                <i class="icon fas fa-sort"></i>
+                Sort
+            </div>
+        </div>
+
         <!-- search count -->
         <div class="search-nav">
             <p class="search-found"><strong>1442</strong> tours found</p>

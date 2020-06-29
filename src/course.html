@@ -4,16 +4,24 @@
     <!-- sidebar -->
     <sidebar class="sidebar">
         <!-- filter box -->
-        <div class="sidebar-item filter">
+        <div class="sidebar-item filter" data-name="filterBox">
             <div class="sidebar-item__header filter__header">
-                <p class="filter__header-title">Filter</p>
+                <p class="filter__header-title hidden-xs">Filter</p>
+                <button data-name="closeFilter" class="button--accessibility filter__header-back-btn hidden-md">
+                    <i class="icon fas fa-chevron-left"></i> Back
+                </button>
                 <button class="button--accessibility filter__reset-btn">Reset</button>
             </div>
 
             <div class="sidebar-item__content">
                 <!-- Price group -->
-                <div class="filter-group">
-                    <p class="filter-group__title">Price</p>
+                <div class="filter-group" data-name="slideDown">
+                    <div class="filter-group__title">
+                        Price
+                        <div class="slidedownIcon hidden-md hidden-lg">
+                            <i class="fas fa-chevron-down hidden-md"></i>
+                        </div>
+                    </div>
 
                     <div class="range-slider" data-type="rangeSlider">
                         <input class="range-slider__input" type="range" value="1000" min="10" max="10000">
@@ -26,8 +34,13 @@
                 </div>
 
                 <!-- Levels group -->
-                <div class="filter-group">
-                    <p class="filter-group__title">Levels</p>
+                <div class="filter-group" data-name="slideDown">
+                    <div class="filter-group__title">
+                        Levels
+                        <div class="slidedownIcon hidden-md hidden-lg">
+                            <i class="fas fa-chevron-down hidden-md"></i>
+                        </div>
+                    </div>
 
                     <div class="checkboxs">
                         <div class="checkboxs-item">
@@ -73,8 +86,13 @@
                 </div>
                 
                 <!-- Types group -->
-                <div class="filter-group">
-                    <p class="filter-group__title">Types</p>
+                <div class="filter-group" data-name="slideDown">
+                    <div class="filter-group__title">
+                        Types
+                        <div class="slidedownIcon hidden-md hidden-lg">
+                            <i class="fas fa-chevron-down hidden-md"></i>
+                        </div>
+                    </div>
 
                     <div class="checkboxs">
                         <div class="checkboxs-item">
@@ -95,6 +113,14 @@
                     </div>
                 </div>
 
+                <div class="filter-bottom-box hidden-md hidden-lg">
+                    <div class="filter__result-count">191 courses</div>
+                    
+                    <button class="btn btn-success">
+                        View result
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -111,7 +137,7 @@
                             <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                                 <div class="textbox-01__images-wrapper">
                                     <div class="textbox-01__images">
-                                        <img src="http://unsplash.it/300/300" alt="Complete Golf">
+                                        <img src="images/img1.png" alt="Complete Golf">
                                     </div>
                                 </div>
         
@@ -143,7 +169,7 @@
                             <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                                 <div class="textbox-01__images-wrapper">
                                     <div class="textbox-01__images">
-                                        <img src="http://unsplash.it/301/301" alt="Complete Golf">
+                                        <img src="images/img2.png" alt="Complete Golf">
                                     </div>
                                 </div>
         
@@ -175,7 +201,7 @@
                             <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                                 <div class="textbox-01__images-wrapper">
                                     <div class="textbox-01__images">
-                                        <img src="http://unsplash.it/302/302" alt="Complete Golf">
+                                        <img src="images/img3.png" alt="Complete Golf">
                                     </div>
                                 </div>
         
@@ -220,7 +246,7 @@
                             <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                                 <div class="textbox-01__images-wrapper">
                                     <div class="textbox-01__images">
-                                        <img src="http://unsplash.it/305/305" alt="Complete Golf">
+                                        <img src="images/img4.png" alt="Complete Golf">
                                     </div>
                                 </div>
         
@@ -252,7 +278,7 @@
                             <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                                 <div class="textbox-01__images-wrapper">
                                     <div class="textbox-01__images">
-                                        <img src="http://unsplash.it/309/309" alt="Complete Golf">
+                                        <img src="images/img5.png" alt="Complete Golf">
                                     </div>
                                 </div>
         
@@ -284,7 +310,7 @@
                             <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                                 <div class="textbox-01__images-wrapper">
                                     <div class="textbox-01__images">
-                                        <img src="http://unsplash.it/308/308" alt="Complete Golf">
+                                        <img src="images/img6.png" alt="Complete Golf">
                                     </div>
                                 </div>
         
@@ -330,10 +356,23 @@
                 
                 <ul class="combobox-list scrollbar" data-name="combobox-list">
                     <li class="combobox-item active">Highest Price</li>
+                    <li class="combobox-item">Popularity</li>
+                    <li class="combobox-item">Highest Rated</li>
+                    <li class="combobox-item">Newest</li>
                     <li class="combobox-item">Lowest Price</li>
-                    <li class="combobox-item">Latest</li>
-                    <li class="combobox-item">Default</li>
                 </ul>
+            </div>
+        </div>
+
+        <div class="filter-sort-box  hidden-md hidden-lg">
+            <div class="filter-sort-box__filter" data-name="openFilter">
+                <i class="icon fas fa-filter"></i>
+                Filter
+            </div>
+
+            <div class="filter-sort-box__sort">
+                <i class="icon fas fa-sort"></i>
+                Sort
             </div>
         </div>
 
@@ -343,7 +382,7 @@
                 <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                     <div class="textbox-01__images-wrapper">
                         <div class="textbox-01__images">
-                            <img src="http://unsplash.it/300/300" alt="Complete Golf">
+                            <img src="images/img2.png" alt="Complete Golf">
                         </div>
                     </div>
 
@@ -373,7 +412,7 @@
                 <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                     <div class="textbox-01__images-wrapper">
                         <div class="textbox-01__images">
-                            <img src="http://unsplash.it/305/305" alt="Complete Golf">
+                            <img src="images/img3.png" alt="Complete Golf">
                         </div>
                     </div>
 
@@ -403,7 +442,7 @@
                 <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                     <div class="textbox-01__images-wrapper">
                         <div class="textbox-01__images">
-                            <img src="http://unsplash.it/301/301" alt="Complete Golf">
+                            <img src="images/img4.png" alt="Complete Golf">
                         </div>
                     </div>
 
@@ -433,7 +472,7 @@
                 <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                     <div class="textbox-01__images-wrapper">
                         <div class="textbox-01__images">
-                            <img src="http://unsplash.it/302/302" alt="Complete Golf">
+                            <img src="images/img5.png" alt="Complete Golf">
                         </div>
                     </div>
 
@@ -463,7 +502,7 @@
                 <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
                     <div class="textbox-01__images-wrapper">
                         <div class="textbox-01__images">
-                            <img src="http://unsplash.it/303/303" alt="Complete Golf">
+                            <img src="images/img6.png" alt="Complete Golf">
                         </div>
                     </div>
 
@@ -501,17 +540,14 @@
                     </a>
                 </li>
 
-                <li class="pagination-item">
+                <li class="pagination-item active">
                     <a href="javascript:void(0)">1</a>
                 </li>
-                <li class="pagination-item active">
+                <li class="pagination-item">
                     <a href="javascript:void(0)">2</a>
                 </li>
                 <li class="pagination-item">
                     <a href="javascript:void(0)">3</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="javascript:void(0)">4</a>
                 </li>
 
                 <!-- three dots -->

@@ -91,19 +91,26 @@ $(document).ready(function () {
   })
 
   // handle slideDown
-  $('[data-name="slideDown"]').on('click', function ($event) {
-    if ($(this).hasClass('active')) {
-      return $(this).removeClass('active');
+  $('[data-name="slideDown"] [data-name="slideDownHeader"]').on('click', function ($event) {
+    var slideDown = $(this).closest('[data-name="slideDown"]');
+    var slideDownIcon = $(this).find('.slidedownIcon');
+
+    if (slideDown.hasClass('active')) {
+      slideDown.removeClass('active');
+      slideDown.find('.slidedownIcon').removeClass('active');
+      return;
     }
 
-    var group = $(this).attr('data-group');
+    var group = slideDown.attr('data-group');
     if (group) {
       var itemsHaveSameGroup = $('[data-name="slideDown"][data-group="' + group + '"]');
       itemsHaveSameGroup.toArray().forEach(function (item) {
         $(item).removeClass('active');
+        $(item).find('.slidedownIcon').removeClass('active');
       })
     }
-    $(this).addClass('active');
+    slideDown.addClass('active');
+    slideDownIcon.addClass('active');
   })
 
   // handle tab
@@ -117,6 +124,16 @@ $(document).ready(function () {
 
     $(tabEle).find('[data-name="tabNavItem"][data-tab="' + dataTab + '"]').addClass('active');
     $(tabEle).find('[data-name="tabContentItem"][data-tab="' + dataTab + '"]').addClass('active');
+  })
+
+  // handle close filter box on mobile
+  $('[data-name="closeFilter"]').on('click', function () {
+    $('[data-name="filterBox"]').removeClass('active')
+  })
+
+  // handle open filter box on mobile
+  $('[data-name="openFilter"]').on('click', function () {
+    $('[data-name="filterBox"]').addClass('active')
   })
 });
 
