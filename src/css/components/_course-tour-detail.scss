@@ -3,10 +3,10 @@
 	padding-bottom: 120px;
 
 	grid-template-columns: 50% 50%;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "content media"
-		"tab tab";
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"content media"
+			"tab tab";
 
 	padding-top: 100px;
 
@@ -14,7 +14,7 @@
 		margin: 0;
 	}
 
-	.course-detail__content {
+	.course-tour-detail__content {
 		grid-area: content;
 		padding-right: 35px;
 	}
