@@ -1,4 +1,4 @@
-$nav-breakpoint: 1340px;
+$nav-breakpoint: 1400px;
 .header {
   color: $white;
   font-size: 22px;
@@ -197,8 +197,8 @@ $nav-breakpoint: 1340px;
       width: 160px;
       font-weight: 700;
       @media screen and (min-width: $breakpoint-md) {
-        font-size: 80px;
-        line-height: 80px;
+        font-size: 63px;
+        line-height: 70px;
 				width: 670px;
       }
     }
@@ -208,7 +208,7 @@ $nav-breakpoint: 1340px;
       width: 260px;
       font-size: 16px;
       @media screen and (min-width: $breakpoint-md) {
-        font-size: 22px;
+        font-size: 19px;
         width: auto;
       }
     }
