@@ -5,7 +5,8 @@
       padding-bottom: 40px;
       border-top: 1px solid #ddd;
       @media screen and (min-width: $breakpoint-lg) {
-        padding: 100px 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
       }
     }
     &-main {

@@ -21,61 +21,64 @@
 <body>
   <header class="header">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index">iTEE</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="courses">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tours">Tours</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Book your time</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Store</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our business</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Promote your business</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-
-          <ul class="navbar-nav nav-right">
-            <li class="nav-item mr-3">
-              <span class="nav-icon">
-                <i class="fas fa-search"></i>
-              </span>
-            </li>
-            <li class="nav-item">
-              <span class="nav-icon">
-                <i class="fas fa-shopping-cart"></i>
-              </span>
-              <span class="nav-link"> Cart</span>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign in</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign up</a>
-            </li>
-          </ul>
+      <nav class="navbar">
+        <div class="menu-icon" onclick="handleMenu('open')">
+          <i class="fas fa-bars"></i>
         </div>
+        <a class="navbar-brand" href="index">iTEE</a>
+        <ul class="navbar-nav nav-left mr-auto">
+          <li class="nav-item">
+            <a class="nav-link navbar-brand-mobile" href="index">iTEE</a>
+            <span class="close-icon" onclick="handleMenu('close')">×</span>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tours">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Book your time</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Promote your business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav nav-right">
+          <li class="nav-item mr-3">
+            <span class="nav-icon">
+              <i class="fas fa-search"></i>
+            </span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+            <span class="nav-link"> Cart</span>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a class="nav-link" href="#">
+              Sign in
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign up</a>
+          </li>
+        </ul>
       </nav>
     </div>
     <!-- build:banner -->
@@ -130,6 +133,8 @@
       Copyright © 2020 iTee Pte Ltd. All rights reserved.
     </div>
   </footer>
+
+  <div class="overlay" onclick="handleMenu('close')"></div>
 </body>
 
 </html>

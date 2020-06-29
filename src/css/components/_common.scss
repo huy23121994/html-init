@@ -50,8 +50,12 @@
 }
 
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media screen and (min-width: $breakpoint-md) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .section {
@@ -261,5 +265,19 @@ section {
   }
   .text {
     padding-top: 10px;
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  &.active {
+    display: block;
   }
 }

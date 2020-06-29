@@ -21,6 +21,15 @@ $(document).ready(function () {
     $(this).parent().removeClass('active');
   })
 
+  $('#myModal').on('hidden.bs.modal', function (e) {
+    $(this).find('iframe').removeAttr('src');
+  })
+
+  $('#myModal').on('show.bs.modal', function (e) {
+    var src = $(this).data('video');
+    $(this).find('iframe').attr('src', src);
+  })
+
   new StarRating('.star-rating', {
     showText: false
   });
@@ -73,3 +82,15 @@ var showImg = function (context) {
     })
   }
 };
+
+var handleMenu = (function () {
+  var isOpenMenu = 'open';
+  return function (open) {
+    isOpenMenu = open;
+    if (isOpenMenu == 'open') {
+      $('.nav-left, .overlay').addClass('active');
+    } else {
+      $('.nav-left, .overlay').removeClass('active');
+    }
+  }
+})();

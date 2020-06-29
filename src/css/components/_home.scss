@@ -84,12 +84,37 @@
     background-color: $gray-4;
     padding: 60px 100px;
   }
+  @media screen and (max-width: $breakpoint-md) {
+    padding: 0;
+    background-color: $gray-4;
+    text-align: center;
+    .section-title{
+      text-align: center!important;
+    }
+    .container {
+      padding: 60px 20px;
+    }
+    .media {
+      flex-direction: column;
+      align-items: center;
+      &-body {
+        margin-top: 20px;
+      }
+    }
+  }
   
 }
 
 .tour {
   background: url(../images/mask2.png) no-repeat;
   background-position: bottom right;
+  @media screen and (max-width: $breakpoint-md) { 
+    text-align: center;
+    margin-top: 50px;
+    .section-title{
+      text-align: center!important;
+    }
+  }
 }
 
 .bussiness {
@@ -115,6 +140,13 @@
 .contact {
   background: url(../images/mask2.png) no-repeat;
   background-position: bottom left;
+  @media screen and (max-width: $breakpoint-md) { 
+    text-align: center;
+    padding: 56px 20px;
+    .section-title{
+      text-align: center!important;
+    }
+  }
   .form {
     background-image: url(../images/bgr-form.png);
     background-repeat: no-repeat;
@@ -130,10 +162,20 @@
       margin-top: 50px;
       background-color: #30302f;
       border-radius: 5px;
-      input {
-        display: inline-block;
-        width: 100%;
+      @media screen and (max-width: $breakpoint-md) { 
+        flex-direction: column;
         background-color: transparent;
+        input {
+          height: 50px;
+          margin-bottom: 20px;
+        }
+      }
+      input {
+        color: $white;
+        display: inline-block;
+        border-radius: 5px;
+        width: 100%;
+        background-color: #30302f;
         border: 0;
         outline: none;
         padding: 0 16px;

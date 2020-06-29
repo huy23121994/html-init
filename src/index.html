@@ -9,9 +9,19 @@
       <img class="mt-2" src="images/appgoogle.png" alt="">
     </div>
 
-    <div class="mt-5 banner__intro-text">
+    <div class="mt-5 banner__intro-text" data-toggle="modal" data-target="#myModal">
       <img src="images/play.svg" alt="" width="66">
       <span>Watch The Introduction </span>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true" data-video="https://www.youtube.com/embed/bOlyCpOwQi8?autoplay=1">
+      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9"><iframe width="100%" height="" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""></iframe></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -22,9 +32,9 @@
   <div class="container">
     <div class="section-title">All features</div>
     <div class="section-subtitle mb-4">lorem ipsum venstrol un somales mastre cum est lomas curam</div>
-    <div class="row pt-5">
+    <div class="row pt-5 align-items-center">
       <div class="col-6 features-img">
-        <img src="images/mobile.png" alt="">
+        <img src="images/mobilex.png" alt="">
       </div>
       <div class="col-6 features-text">
         <div class="row">
@@ -33,7 +43,7 @@
               <img src="images/personal.svg" width="30">
             </div>
             <div class="features-item-content">
-              <img class="features-item-img" src="images/mobile.png" alt="">
+              <img class="features-item-img" src="images/mobilex.png" alt="">
               <div class="features-item-title">Easy to schedule & instant booking</div>
               <div class="features-item-text">Schedule and book tee times by selecting a golf course' available time
                 slot
@@ -216,7 +226,7 @@
 <section class="tour pt-0">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 order-2 order-lg-1">
+      <div class="col-lg-6 order-2 order-lg-1 d-none d-md-block">
         <div class="row">
           <div class="col-sm-6">
             <img src="images/img2.png" height="450">

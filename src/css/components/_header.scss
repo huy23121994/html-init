@@ -1,50 +1,123 @@
+$nav-breakpoint: 1340px;
 .header {
   color: $white;
   font-size: 22px;
-  background-color: $dark;
+	background-color: $dark;
+	@media screen and (max-width: $nav-breakpoint) {
+		background-color: $white;
+		box-shadow: 0px 3px 13px 0px #efefef;
+		color: $black;
+	}
+	.menu-icon {
+		display: none;
+		cursor: pointer;
+		@media screen and (max-width: $nav-breakpoint) {
+			display: block;
+			font-size: 18px;
+		}
+	}
   .nav {
 		&bar {
 			padding: 0;
 			height: 60px;
+			display: flex;
+			align-items: center;
 			&-brand {
 				font-size: 30px;
 				font-family: $font-montserrat;
 				color: $white;
-				padding: 0;
 				&:hover {
 					color: $white;
 				}
+				@media screen and (max-width: $nav-breakpoint) {
+					color: $black;
+					font-size: 25px;
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+				&-mobile {
+					display: none!important;
+					font-size: 30px!important;
+					font-family: $font-montserrat;
+					@media screen and (max-width: $nav-breakpoint) {
+						display: block!important;
+					}
+				}
 			}
-			&-nav .nav-link {
-				color: $gray-3;
-				font-size: 14px;
-				font-weight: 300;
-				text-decoration: none;
-				display: inline;
-				&:hover, &:focus {
-					color: $white;
+			&-nav {
+				&.nav-left {
+					@media screen and (max-width: $nav-breakpoint) {
+						transform: translateX(-100%);
+						transition: transform 0.3s;
+						width: 260px;
+						height: 100%;
+						position: fixed;
+						top: 0;
+						left: 0;
+						background-color: #fff;
+						z-index: 3;
+						&.active {
+							transform: translateX(0%);
+							box-shadow: 1px 0px 18px 0px #cccccc;
+						}
+					}
+				}
+				.nav-link {
+					color: $gray-3;
+					font-size: 14px;
+					font-weight: 300;
+					text-decoration: none;
+					display: inline;
+					&:hover, &:focus {
+						color: $white;
+					}
 				}
 			}
 			&-collapse {
 				height: 100%;
 			}
+			.close-icon {
+				color: #585858;
+				font-size: 36px;
+				position: absolute;
+				right: 13px;
+				top: 0;
+				cursor: pointer;
+				display: none;
+				@media screen and (max-width: $nav-breakpoint) {
+					margin-left: 0;
+					display: block;
+        }
+			}
 		}
     &-item {
+			display: inline-block;
       &:not(:first-child) {
-        @media screen and (min-width: $breakpoint-md) {
-          margin-left: calc(25px - 1rem);
+				margin-left: calc(25px - 1rem);
+        @media screen and (max-width: $nav-breakpoint) {
+          margin-left: 0
         }
 			}
 			&.active .nav-link{
 				color: $white;
 				font-weight: 700;
 			}
+			@media screen and (max-width: $nav-breakpoint) {
+				display: block;
+				padding: 7px 0;
+				border-bottom: 1px solid #dcdcdc;
+				&.active .nav-link, .nav-link{
+					color: $black;
+					font-weight: 700;
+					&:hover {
+						color: $black;
+					}
+				}
+			}
 		}
 		&-icon {
 			font-size: 17px;
-			.fa-search {
-				color: $gray-3;
-			}
 		}
 		&-right {
 			height: 100%;
@@ -54,9 +127,29 @@
 			display: flex;
 			align-items: center;
 			background-color: $black;
+			.fa-user {
+				display: none;
+			}
+			@media screen and (max-width: $nav-breakpoint) {
+				position: absolute;
+				right: 15px;
+				height: 60px;
+				background-color: #fff;
+				color: #000;
+				.nav-item {
+					border-bottom: 0;
+				}
+				.nav-link {
+					display: none;
+				}
+				.fa-user {
+					display: block;
+					font-size: 19px;
+					margin-left: 16px;
+				}
+			}
 			.nav-link {
 				color: $white;
-
 			}
 			.nav-item:nth-child(2) {
 				position: relative;
