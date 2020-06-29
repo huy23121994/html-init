@@ -271,6 +271,18 @@
 
 		@media screen and (max-width: $breakpoint-md - 1px) {
 			padding: 20px !important;
+
+			.textbox-01__infor--02 {
+				display: block;
+
+				.textbox-01__location {
+					margin-left: 0;
+					width: 100%;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
 		}
 	}
 
