@@ -14,8 +14,11 @@
 @import "./node_modules/bootstrap/scss/_type";
 
 @import "./settings/elements";
+@import "./settings/mixin";
 
 @import "components/common";
 @import "components/header";
 @import "components/footer";
 @import "components/home";
+@import "components/course-tour";
+@import "components/course-tour-detail";
