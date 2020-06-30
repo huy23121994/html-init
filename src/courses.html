@@ -1,341 +1,571 @@
 <!-- build:content -->
-<section class="container courses">
-  <div class="row">
-    <div class="col-lg-3">
-      <div class="sidebar">
-        <div class="sidebar__title">
-          <h5>Filter</h5>
-          <span class="ml-auto">Reset</span>
-        </div>
-        <div class="sidebar__scope">
-          <div class="sidebar__scope-title">Price</div>
-          <div class="mt-2">
-            <input type="range" class="form-control-range" id="formControlRange">
-            <div class="d-flex justify-content-between mt-2 font-weight-bold">
-              <span>10$</span>
-              <span>10.000$</span>
-            </div>
-          </div>
-        </div>
-        <div class="sidebar__scope mt-4">
-          <div class="sidebar__scope-title">Levels</div>
-          <div class="form-check mt-3">
-            <label class="form-check-label" for="defaultCheck1">Beginner (18)</label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-          </div>
-          <div class="form-check mt-3">
-            <label class="form-check-label" for="defaultCheck2">Advanced beginner (20)</label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-          </div>
-          <div class="form-check mt-3">
-            <label class="form-check-label" for="defaultCheck3">General (7)</label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-          </div>
-          <div class="form-check mt-3">
-            <label class="form-check-label" for="defaultCheck4">Intermediate (28)</label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-          </div>
-          <div class="form-check mt-3">
-            <label class="form-check-label" for="defaultCheck5">Advanced Competitive (9)</label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-          </div>
 
+<div class="container course-page">
+    <!-- sidebar -->
+    <sidebar class="sidebar">
+        <!-- filter box -->
+        <div class="sidebar-item filter" data-name="filterBox">
+            <div class="sidebar-item__header filter__header">
+                <p class="filter__header-title hidden-xs">Filter</p>
+                <button data-name="closeFilter" class="button--accessibility filter__header-back-btn hidden-md">
+                    <i class="icon fas fa-chevron-left"></i> Back
+                </button>
+                <button class="button--accessibility filter__reset-btn">Reset</button>
+            </div>
 
-          <div class="sidebar__scope-title mt-4">Type</div>
-          <div class="form-check mt-3">
-            <label class="form-check-label" for="defaultCheck6">Online (18)</label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
-          </div>
-          <div class="form-check mt-3">
-            <label class="form-check-label" for="defaultCheck7">Offline (20)</label>
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
-          </div>
-        </div>
+            <div class="sidebar-item__content">
+                <!-- Price group -->
+                <div class="filter-group" data-name="slideDown">
+                    <div class="filter-group__title" data-name="slideDownHeader">
+                        Price
+                        <div class="slidedownIcon hidden-md hidden-lg">
+                            <i class="fas fa-chevron-down hidden-md"></i>
+                        </div>
+                    </div>
 
-        <div class="sidebar__title mt-5">
-          <h5>See our best seller</h5>
-        </div>
-        <div class="sidebar__scope">
-          <div class="media">
-            <img src="images/img5.png" class="mr-3 rounded" width="100">
-            <div class="media-body">
-              <div class="font-weight-bold mb-1">Complete Golf…</div>
-              <div class="font-weight-bold text-success">1200$</div>
-              <select class="star-rating">
-                <option value="">Select a rating</option>
-                <option value="5">Excellent</option>
-                <option value="4">Very Good</option>
-                <option value="3" selected>Average</option>
-                <option value="2">Poor</option>
-                <option value="1">Terrible</option>
-              </select>
-              <span class="font-s-small">(10 ratings)</span>
-            </div>
-          </div>
-          <div class="media mt-4">
-            <img src="images/img5.png" class="mr-3 rounded" width="100">
-            <div class="media-body">
-              <div class="font-weight-bold mb-1">Complete Golf…</div>
-              <div class="font-weight-bold text-success">1200$</div>
-              <select class="star-rating">
-                <option value="">Select a rating</option>
-                <option value="5">Excellent</option>
-                <option value="4">Very Good</option>
-                <option value="3">Average</option>
-                <option value="2" selected>Poor</option>
-                <option value="1">Terrible</option>
-              </select>
-              <span class="font-s-small">(10 ratings)</span>
-            </div>
-          </div>
-          <div class="media mt-4">
-            <img src="images/img5.png" class="mr-3 rounded" width="100">
-            <div class="media-body">
-              <div class="font-weight-bold mb-1">Complete Golf…</div>
-              <div class="font-weight-bold text-success">1200$</div>
-              <select class="star-rating">
-                <option value="">Select a rating</option>
-                <option value="5">Excellent</option>
-                <option value="4" selected>Very Good</option>
-                <option value="3">Average</option>
-                <option value="2">Poor</option>
-                <option value="1">Terrible</option>
-              </select>
-              <span class="font-s-small">(10 ratings)</span>
-            </div>
-          </div>
+                    <div class="range-slider" data-type="rangeSlider">
+                        <input class="range-slider__input" type="range" value="1000" min="10" max="10000">
+                        <div class="range-slider__range" data-type="rangeSliderProgress" data-value="1000"></div>
+                        <div class="range-slider__labels">
+                            <span class="range-slider__min">10$</span>
+                            <span class="range-slider__max">10.000$</span>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="text-right text-success font-weight-bold font-s-small mt-3">
-            See all <i class="ml-1 fas fa-arrow-right"></i>
-          </div>
-        </div>
+                <!-- Levels group -->
+                <div class="filter-group" data-name="slideDown">
+                    <div class="filter-group__title" data-name="slideDownHeader">
+                        Levels
+                        <div class="slidedownIcon hidden-md hidden-lg">
+                            <i class="fas fa-chevron-down hidden-md"></i>
+                        </div>
+                    </div>
 
-        <div class="sidebar__title mt-5">
-          <h5>Hot Deals</h5>
-        </div>
-        <div class="sidebar__scope">
-          <div class="media">
-            <img src="images/img5.png" class="mr-3 rounded" width="100">
-            <span class="media-tag">HOT</span>
-            <div class="media-body">
-              <div class="font-weight-bold mb-1">Complete Golf…</div>
-              <div class="font-weight-bold text-success">1200$</div>
-              <select class="star-rating">
-                <option value="">Select a rating</option>
-                <option value="5" selected>Excellent</option>
-                <option value="4">Very Good</option>
-                <option value="3">Average</option>
-                <option value="2">Poor</option>
-                <option value="1">Terrible</option>
-              </select>
-              <span class="font-s-small">(10 ratings)</span>
-            </div>
-          </div>
-          <div class="media mt-4">
-            <img src="images/img5.png" class="mr-3 rounded" width="100">
-            <span class="media-tag">HOT</span>
-            <div class="media-body">
-              <div class="font-weight-bold mb-1">Complete Golf…</div>
-              <div class="font-weight-bold text-success">1200$</div>
-              <select class="star-rating">
-                <option value="">Select a rating</option>
-                <option value="5">Excellent</option>
-                <option value="4">Very Good</option>
-                <option value="3">Average</option>
-                <option value="2">Poor</option>
-                <option value="1">Terrible</option>
-              </select>
-              <span class="font-s-small">(10 ratings)</span>
-            </div>
-          </div>
-          <div class="media mt-4">
-            <img src="images/img5.png" class="mr-3 rounded" width="100">
-            <span class="media-tag">HOT</span>
-            <div class="media-body">
-              <div class="font-weight-bold mb-1">Complete Golf…</div>
-              <div class="font-weight-bold text-success">1200$</div>
-              <select class="star-rating">
-                <option value="">Select a rating</option>
-                <option value="5">Excellent</option>
-                <option value="4">Very Good</option>
-                <option value="3">Average</option>
-                <option value="2">Poor</option>
-                <option value="1">Terrible</option>
-              </select>
-              <span class="font-s-small">(10 ratings)</span>
-            </div>
-          </div>
+                    <div class="checkboxs">
+                        <div class="checkboxs-item">
+                            <p class="checkboxs-item__label">Beginner (18)</p>
+                            <label class="checkboxs-item__box input-checkbox" for="levels-beginner">
+                                <input type="checkbox" name="" id="levels-beginner">
+                                <span class="checkbox"><i class="icon fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        
+                        <div class="checkboxs-item">
+                            <p class="checkboxs-item__label">Advanced beginner (20)</p>
+                            <label class="checkboxs-item__box input-checkbox" for="levels-advanced-beginner">
+                                <input type="checkbox" name="" id="levels-advanced-beginner">
+                                <span class="checkbox"><i class="icon fas fa-check"></i></span>
+                            </label>
+                        </div>
 
-          <div class="text-right text-success font-weight-bold font-s-small mt-3">
-            See all <i class="ml-1 fas fa-arrow-right"></i>
-          </div>
+                        <div class="checkboxs-item">
+                            <p class="checkboxs-item__label">General (7)</p>
+                            <label class="checkboxs-item__box input-checkbox" for="levels-general">
+                                <input type="checkbox" name="" id="levels-general">
+                                <span class="checkbox"><i class="icon fas fa-check"></i></span>
+                            </label>
+                        </div>
+
+                        <div class="checkboxs-item">
+                            <p class="checkboxs-item__label">Intermediate (28)</p>
+                            <label class="checkboxs-item__box input-checkbox" for="levels-intermediate">
+                                <input type="checkbox" name="" id="levels-intermediate">
+                                <span class="checkbox"><i class="icon fas fa-check"></i></span>
+                            </label>
+                        </div>
+
+                        <div class="checkboxs-item">
+                            <p class="checkboxs-item__label">Advanced Competitive (9)</p>
+                            <label class="checkboxs-item__box input-checkbox" for="levels-advanced-competitive">
+                                <input type="checkbox" name="" id="levels-advanced-competitive">
+                                <span class="checkbox"><i class="icon fas fa-check"></i></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Types group -->
+                <div class="filter-group" data-name="slideDown">
+                    <div class="filter-group__title" data-name="slideDownHeader">
+                        Types
+                        <div class="slidedownIcon hidden-md hidden-lg">
+                            <i class="fas fa-chevron-down hidden-md"></i>
+                        </div>
+                    </div>
+
+                    <div class="checkboxs">
+                        <div class="checkboxs-item">
+                            <p class="checkboxs-item__label">Online (18)</p>
+                            <label class="checkboxs-item__box input-checkbox" for="one-day">
+                                <input type="checkbox" name="" id="one-day">
+                                <span class="checkbox"><i class="icon fas fa-check"></i></span>
+                            </label>
+                        </div>
+                        
+                        <div class="checkboxs-item">
+                            <p class="checkboxs-item__label">Offline (20)</p>
+                            <label class="checkboxs-item__box input-checkbox" for="two-four-days">
+                                <input type="checkbox" name="" id="two-four-days">
+                                <span class="checkbox"><i class="icon fas fa-check"></i></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-bottom-box hidden-md hidden-lg">
+                    <div class="filter__result-count">191 courses</div>
+                    
+                    <button class="btn btn-success">
+                        View result
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
         </div>
 
-      </div>
+        <!-- best seller box -->
+        <div class="sidebar-item best-seller">
+            <div class="sidebar-item__header">
+                <p class="filter__header-title">See our best seller</p>
+            </div>
+
+            <div class="sidebar-item__content clear">
+                <div>
+                    <div class="best-seller-item">
+                        <article class="textbox-01 textbox-01--minimize">
+                            <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                                <div class="textbox-01__images-wrapper">
+                                    <div class="textbox-01__images">
+                                        <img src="images/img1.png" alt="Complete Golf">
+                                    </div>
+                                </div>
+        
+                                <div class="textbox-01__content">
+                                    <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                                    <p class="textbox-01__price">1200$</p>
+                                    <div class="textbox-01__infor">
+                                        <div class="rating">
+                                            <div class="rating__stars">
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star"></i>
+                                            </div>
+                                            <div class="rating__count">(10 ratings)</div>
+                                        </div>
+        
+                                        <div class="textbox-01__duration">Online 2.5 hour</div>
+                                    </div>
+                                    <p class="textbox-01__description">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+    
+                    <div class="best-seller-item">
+                        <article class="textbox-01 textbox-01--minimize">
+                            <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                                <div class="textbox-01__images-wrapper">
+                                    <div class="textbox-01__images">
+                                        <img src="images/img2.png" alt="Complete Golf">
+                                    </div>
+                                </div>
+        
+                                <div class="textbox-01__content">
+                                    <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                                    <p class="textbox-01__price">1200$</p>
+                                    <div class="textbox-01__infor">
+                                        <div class="rating">
+                                            <div class="rating__stars">
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star"></i>
+                                            </div>
+                                            <div class="rating__count">(10 ratings)</div>
+                                        </div>
+        
+                                        <div class="textbox-01__duration">Online 2.5 hour</div>
+                                    </div>
+                                    <p class="textbox-01__description">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+    
+                    <div class="best-seller-item">
+                        <article class="textbox-01 textbox-01--minimize">
+                            <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                                <div class="textbox-01__images-wrapper">
+                                    <div class="textbox-01__images">
+                                        <img src="images/img3.png" alt="Complete Golf">
+                                    </div>
+                                </div>
+        
+                                <div class="textbox-01__content">
+                                    <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                                    <p class="textbox-01__price">1200$</p>
+                                    <div class="textbox-01__infor">
+                                        <div class="rating">
+                                            <div class="rating__stars">
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star"></i>
+                                            </div>
+                                            <div class="rating__count">(10 ratings)</div>
+                                        </div>
+        
+                                        <div class="textbox-01__duration">Online 2.5 hour</div>
+                                    </div>
+                                    <p class="textbox-01__description">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+                
+                <a href="javascript:void(0)" class="see-all-btn">See all <i class="icon fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+         <!-- hot deal box -->
+         <div class="sidebar-item hot-deal">
+            <div class="sidebar-item__header">
+                <p class="filter__header-title">Hot deal</p>
+            </div>
+
+            <div class="sidebar-item__content clear">
+                <div>
+                    <div class="hot-deal-item">
+                        <article class="textbox-01 textbox-01--minimize hot-tag">
+                            <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                                <div class="textbox-01__images-wrapper">
+                                    <div class="textbox-01__images">
+                                        <img src="images/img4.png" alt="Complete Golf">
+                                    </div>
+                                </div>
+        
+                                <div class="textbox-01__content">
+                                    <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                                    <p class="textbox-01__price">1200$</p>
+                                    <div class="textbox-01__infor">
+                                        <div class="rating">
+                                            <div class="rating__stars">
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star"></i>
+                                            </div>
+                                            <div class="rating__count">(10 ratings)</div>
+                                        </div>
+        
+                                        <div class="textbox-01__duration">Online 2.5 hour</div>
+                                    </div>
+                                    <p class="textbox-01__description">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="hot-deal-item">
+                        <article class="textbox-01 textbox-01--minimize hot-tag">
+                            <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                                <div class="textbox-01__images-wrapper">
+                                    <div class="textbox-01__images">
+                                        <img src="images/img5.png" alt="Complete Golf">
+                                    </div>
+                                </div>
+        
+                                <div class="textbox-01__content">
+                                    <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                                    <p class="textbox-01__price">1200$</p>
+                                    <div class="textbox-01__infor">
+                                        <div class="rating">
+                                            <div class="rating__stars">
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star"></i>
+                                            </div>
+                                            <div class="rating__count">(10 ratings)</div>
+                                        </div>
+        
+                                        <div class="textbox-01__duration">Online 2.5 hour</div>
+                                    </div>
+                                    <p class="textbox-01__description">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="hot-deal-item">
+                        <article class="textbox-01 textbox-01--minimize hot-tag">
+                            <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                                <div class="textbox-01__images-wrapper">
+                                    <div class="textbox-01__images">
+                                        <img src="images/img6.png" alt="Complete Golf">
+                                    </div>
+                                </div>
+        
+                                <div class="textbox-01__content">
+                                    <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                                    <p class="textbox-01__price">1200$</p>
+                                    <div class="textbox-01__infor">
+                                        <div class="rating">
+                                            <div class="rating__stars">
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star active"></i>
+                                                <i class="icon fas fa-star"></i>
+                                            </div>
+                                            <div class="rating__count">(10 ratings)</div>
+                                        </div>
+        
+                                        <div class="textbox-01__duration">Online 2.5 hour</div>
+                                    </div>
+                                    <p class="textbox-01__description">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+                
+                <a href="javascript:void(0)" class="see-all-btn">See all <i class="icon fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </sidebar>
+
+    <div class="search-content">
+        <!-- search count -->
+        <div class="search-nav">
+            <p class="search-found"><strong>1442</strong> courses found</p>
+
+            <div class="combobox" data-type="combobox">
+                <div class="combobox__selected">
+                    <p title="Highest Price" class="combobox__selected-text truncate">Highest Price</p>
+                    <i class='combobox__selected-icon fas fa-caret-down'></i>
+                </div>
+                
+                <ul class="combobox-list scrollbar" data-name="combobox-list">
+                    <li class="combobox-item active">Highest Price</li>
+                    <li class="combobox-item">Popularity</li>
+                    <li class="combobox-item">Highest Rated</li>
+                    <li class="combobox-item">Newest</li>
+                    <li class="combobox-item">Lowest Price</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="filter-sort-box  hidden-md hidden-lg">
+            <div class="filter-sort-box__filter" data-name="openFilter">
+                <i class="icon fas fa-filter"></i>
+                Filter
+            </div>
+
+            <div class="filter-sort-box__sort">
+                <i class="icon fas fa-sort"></i>
+                Sort
+            </div>
+        </div>
+
+        <!-- list item -->
+        <div class="search-item">
+            <article class="textbox-01">
+                <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                    <div class="textbox-01__images-wrapper">
+                        <div class="textbox-01__images">
+                            <img src="images/img2.png" alt="Complete Golf">
+                        </div>
+                    </div>
+
+                    <div class="textbox-01__content">
+                        <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                        <p class="textbox-01__price">1200$</p>
+                        <div class="textbox-01__infor">
+                            <div class="rating">
+                                <div class="rating__stars" data-rating="4">
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star"></i>
+                                </div>
+                                <div class="rating__count">(10 ratings)</div>
+                            </div>
+
+                            <div class="textbox-01__duration">Online 2.5 hour</div>
+                        </div>
+                        <p class="textbox-01__description clamp-2">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy. Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="textbox-01">
+                <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                    <div class="textbox-01__images-wrapper">
+                        <div class="textbox-01__images">
+                            <img src="images/img3.png" alt="Complete Golf">
+                        </div>
+                    </div>
+
+                    <div class="textbox-01__content">
+                        <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                        <p class="textbox-01__price">1200$</p>
+                        <div class="textbox-01__infor">
+                            <div class="rating">
+                                <div class="rating__stars" data-rating="4">
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star"></i>
+                                </div>
+                                <div class="rating__count">(10 ratings)</div>
+                            </div>
+
+                            <div class="textbox-01__duration">Online 2.5 hour</div>
+                        </div>
+                        <p class="textbox-01__description clamp-2">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy. Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="textbox-01">
+                <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                    <div class="textbox-01__images-wrapper">
+                        <div class="textbox-01__images">
+                            <img src="images/img4.png" alt="Complete Golf">
+                        </div>
+                    </div>
+
+                    <div class="textbox-01__content">
+                        <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                        <p class="textbox-01__price">1200$</p>
+                        <div class="textbox-01__infor">
+                            <div class="rating">
+                                <div class="rating__stars" data-rating="4">
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star"></i>
+                                </div>
+                                <div class="rating__count">(10 ratings)</div>
+                            </div>
+
+                            <div class="textbox-01__duration">Online 2.5 hour</div>
+                        </div>
+                        <p class="textbox-01__description clamp-2">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy. Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="textbox-01">
+                <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                    <div class="textbox-01__images-wrapper">
+                        <div class="textbox-01__images">
+                            <img src="images/img5.png" alt="Complete Golf">
+                        </div>
+                    </div>
+
+                    <div class="textbox-01__content">
+                        <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                        <p class="textbox-01__price">1200$</p>
+                        <div class="textbox-01__infor">
+                            <div class="rating">
+                                <div class="rating__stars" data-rating="4">
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star"></i>
+                                </div>
+                                <div class="rating__count">(10 ratings)</div>
+                            </div>
+
+                            <div class="textbox-01__duration">Online 2.5 hour</div>
+                        </div>
+                        <p class="textbox-01__description clamp-2">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy. Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="textbox-01">
+                <a href="course-detail.html" class="textbox-01__link" title="Complete Golf Complete Golf">
+                    <div class="textbox-01__images-wrapper">
+                        <div class="textbox-01__images">
+                            <img src="images/img6.png" alt="Complete Golf">
+                        </div>
+                    </div>
+
+                    <div class="textbox-01__content">
+                        <h5 class="textbox-01__title">Complete Golf Complete Golf</h5>
+                        <p class="textbox-01__price">1200$</p>
+                        <div class="textbox-01__infor">
+                            <div class="rating">
+                                <div class="rating__stars" data-rating="4">
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star active"></i>
+                                    <i class="icon fas fa-star"></i>
+                                </div>
+                                <div class="rating__count">(10 ratings)</div>
+                            </div>
+
+                            <div class="textbox-01__duration">Online 2.5 hour</div>
+                        </div>
+                        <p class="textbox-01__description clamp-2">Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy. Improve your short game, golf swing, and course management with simple step by step drills at your own pace on Udemy.</p>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+
+        <!-- pagination -->
+        <div class="pagination">
+            <ul class="pagination-list">
+                <!-- prev button -->
+                <li class="pagination-item pagination-item--arrow pagination__prev hidden">
+                    <a href="javascript:void(0)" title="previous">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                </li>
+
+                <li class="pagination-item active">
+                    <a href="javascript:void(0)">1</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="javascript:void(0)">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a href="javascript:void(0)">3</a>
+                </li>
+
+                <!-- three dots -->
+                <li class="pagination-item--three-dots">...</li>
+
+                <li class="pagination-item">
+                    <a href="javascript:void(0)">10</a>
+                </li>
+
+                <!-- next button -->
+                <li class="pagination-item pagination-item--arrow pagination__next">
+                    <a href="javascript:void(0)" title="next">
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="col-lg-9">
-      <div class="courses__list-number">
-        <div>
-          <strong>1442</strong> courses found
-        </div>
-        <select name="" id="">
-          <option value="">Highest Price</option>
-          <option value="">Lowest Price</option>
-        </select>
-      </div>
-
-      <div class="courses__list">
-        <div class="courses__list-item">
-          <img src="images/img5.png" class="mr-3 rounded" width="250">
-          <div class="mt-3 mt-lg-0">
-            <div class="courses__list-title">
-              <a href="course_detail">Classic Viet Nam Golf Tour</a>
-            </div>
-
-            <strong>From 1200$ <span class="font-s-small">/person</span></strong>
-
-            <div class="courses__list-info">
-              <div class="courses__list-info__time">
-                <i class="far fa-clock"></i>
-                12 Days, 11 Nights
-              </div>
-              <div class="courses__list-info__place">
-                <i class="fas fa-map-marker-alt"></i>
-                Ha Noi | Ha Long | Hue | Hoi An | Hue | Ho Chi Minh
-              </div>
-            </div>
-            <p>Improve your short game, golf swing, and course management with simple step by step drills at your own
-              pace on Udemy.</p>
-          </div>
-        </div>
-        <div class="courses__list-item">
-          <img src="images/img5.png" class="mr-3 rounded" width="250">
-          <div class="mt-3 mt-lg-0">
-            <div class="courses__list-title">
-              <a href="course_detail">Classic Viet Nam Golf Tour</a>
-            </div>
-
-            <strong>From 1200$ <span class="font-s-small">/person</span></strong>
-
-            <div class="courses__list-info">
-              <div class="courses__list-info__time">
-                <i class="far fa-clock"></i>
-                12 Days, 11 Nights
-              </div>
-              <div class="courses__list-info__place">
-                <i class="fas fa-map-marker-alt"></i>
-                Ha Noi | Ha Long | Hue | Hoi An | Hue | Ho Chi Minh
-              </div>
-            </div>
-            <p>Improve your short game, golf swing, and course management with simple step by step drills at your own
-              pace on Udemy.</p>
-          </div>
-        </div>
-        <div class="courses__list-item">
-          <img src="images/img5.png" class="mr-3 rounded" width="250">
-          <div class="mt-3 mt-lg-0">
-            <div class="courses__list-title">
-              <a href="course_detail">Classic Viet Nam Golf Tour</a>
-            </div>
-
-            <strong>From 1200$ <span class="font-s-small">/person</span></strong>
-
-            <div class="courses__list-info">
-              <div class="courses__list-info__time">
-                <i class="far fa-clock"></i>
-                12 Days, 11 Nights
-              </div>
-              <div class="courses__list-info__place">
-                <i class="fas fa-map-marker-alt"></i>
-                Ha Noi | Ha Long | Hue | Hoi An | Hue | Ho Chi Minh
-              </div>
-            </div>
-            <p>Improve your short game, golf swing, and course management with simple step by step drills at your own
-              pace on Udemy.</p>
-          </div>
-        </div>
-        <div class="courses__list-item">
-          <img src="images/img5.png" class="mr-3 rounded" width="250">
-          <div class="mt-3 mt-lg-0">
-            <div class="courses__list-title">
-              <a href="course_detail">Classic Viet Nam Golf Tour</a>
-            </div>
-
-            <strong>From 1200$ <span class="font-s-small">/person</span></strong>
-
-            <div class="courses__list-info">
-              <div class="courses__list-info__time">
-                <i class="far fa-clock"></i>
-                12 Days, 11 Nights
-              </div>
-              <div class="courses__list-info__place">
-                <i class="fas fa-map-marker-alt"></i>
-                Ha Noi | Ha Long | Hue | Hoi An | Hue | Ho Chi Minh
-              </div>
-            </div>
-            <p>Improve your short game, golf swing, and course management with simple step by step drills at your own
-              pace on Udemy.</p>
-          </div>
-        </div>
-        <div class="courses__list-item">
-          <img src="images/img5.png" class="mr-3 rounded" width="250">
-          <div class="mt-3 mt-lg-0">
-            <div class="courses__list-title">
-              <a href="course_detail">Classic Viet Nam Golf Tour</a>
-            </div>
-
-            <strong>From 1200$ <span class="font-s-small">/person</span></strong>
-
-            <div class="courses__list-info">
-              <div class="courses__list-info__time">
-                <i class="far fa-clock"></i>
-                12 Days, 11 Nights
-              </div>
-              <div class="courses__list-info__place">
-                <i class="fas fa-map-marker-alt"></i>
-                Ha Noi | Ha Long | Hue | Hoi An | Hue | Ho Chi Minh
-              </div>
-            </div>
-            <p>Improve your short game, golf swing, and course management with simple step by step drills at your own
-              pace on Udemy.</p>
-          </div>
-        </div>
-        <div class="courses__list-item">
-          <img src="images/img5.png" class="mr-3 rounded" width="250">
-          <div class="mt-3 mt-lg-0">
-            <div class="courses__list-title">
-              <a href="course_detail">Classic Viet Nam Golf Tour</a>
-            </div>
-
-            <strong>From 1200$ <span class="font-s-small">/person</span></strong>
-
-            <div class="courses__list-info">
-              <div class="courses__list-info__time">
-                <i class="far fa-clock"></i>
-                12 Days, 11 Nights
-              </div>
-              <div class="courses__list-info__place">
-                <i class="fas fa-map-marker-alt"></i>
-                Ha Noi | Ha Long | Hue | Hoi An | Hue | Ho Chi Minh
-              </div>
-            </div>
-            <p>Improve your short game, golf swing, and course management with simple step by step drills at your own
-              pace on Udemy.</p>
-          </div>
-        </div>
-
-        <ul class="pagination mt-5">
-          <li class="page-item active"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item page-item-next">
-            <a class="page-link" href="#">
-              <i class="fas fa-arrow-right"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /build:content -->
+</div>
+  
+  <!-- /build:content -->
