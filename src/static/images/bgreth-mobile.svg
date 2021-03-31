@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="296" viewBox="0 0 375 296">
+    <defs>
+        <filter id="r3p2jx5ktd" width="258.2%" height="163.1%" x="-79.1%" y="-31.6%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="31.2"/>
+        </filter>
+        <filter id="9emow2313e" width="105%" height="108.9%" x="-2.6%" y="-4.4%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="3"/>
+        </filter>
+        <filter id="hh9merhhjg" width="380.4%" height="594.7%" x="-140.2%" y="-247.4%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="59.28"/>
+        </filter>
+        <filter id="r1zzcywllj" width="317.5%" height="485.6%" x="-108.7%" y="-192.8%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="59.28"/>
+        </filter>
+        <filter id="yca0bu6vim" width="380.6%" height="594.4%" x="-140.3%" y="-247.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="59.28"/>
+        </filter>
+        <filter id="nl0kfa8c5p" width="275.2%" height="476.4%" x="-87.7%" y="-188.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="50 0"/>
+        </filter>
+        <filter id="pclkh21pos" width="223.3%" height="364.3%" x="-61.7%" y="-132.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="50 0"/>
+        </filter>
+        <filter id="coanczt05v" width="380.4%" height="594.7%" x="-140.2%" y="-247.4%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="59.28"/>
+        </filter>
+        <filter id="5tiob7l5ky" width="275.1%" height="476.7%" x="-87.6%" y="-188.3%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="50 0"/>
+        </filter>
+        <filter id="8blec4twbB" width="223.2%" height="364.5%" x="-61.7%" y="-132.3%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="50 0"/>
+        </filter>
+        <filter id="3ymqybdoiE" width="380.5%" height="594%" x="-140.2%" y="-247%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="59.28"/>
+        </filter>
+        <filter id="uzopzfofyH" width="103.4%" height="104.4%" x="-1.7%" y="-2.2%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="4.68"/>
+        </filter>
+        <path id="s7pkjubb8f" d="M0.164 0.061L232.768 130.345 140.157 175.534z"/>
+        <path id="jf8y5uhbpi" d="M0.317 0.36L285.894 167.464 129.436 150.262z"/>
+        <path id="v2rjy47enl" d="M0.433 0.268L193.72 72.16 325.828 303.721 151.29 142.184z"/>
+        <path id="txo4e8b0ao" d="M198.859 0.194L406.653 115.65 0.226 64.544z"/>
+        <path id="9x4zcprvzr" d="M110.895 0.02L579.643 252.602 0.325 202.654z"/>
+        <path id="z6zhsnorvu" d="M0.434 0.268L193.842 72.112 326.033 303.519 151.385 142.089z"/>
+        <path id="edrh9n0iax" d="M198.984 0.194L406.909 115.573 0.226 64.501z"/>
+        <path id="euucm8opmA" d="M103.52 0.02L541.004 243 0.325 194.951z"/>
+        <path id="uq3ahvqhyD" d="M0.434 0.269L193.822 72.213 326 303.945 151.37 142.289z"/>
+        <linearGradient id="0p3fwz1ahb" x1="136.429%" x2="21.558%" y1="39.603%" y2="52.904%">
+            <stop offset="0%" stop-color="#00C58A"/>
+            <stop offset="100%" stop-color="#005867"/>
+        </linearGradient>
+        <linearGradient id="r3p6lzoeqG" x1="3.918%" x2="135.686%" y1="76.562%" y2="4.772%">
+            <stop offset="0%" stop-color="#2CA7AD"/>
+            <stop offset="42.818%" stop-color="#2CA7AD" stop-opacity=".451"/>
+            <stop offset="67.414%" stop-color="#91C45D"/>
+            <stop offset="67.641%" stop-color="#2CA7AD" stop-opacity=".45"/>
+            <stop offset="100%" stop-color="#91C45D" stop-opacity="0"/>
+        </linearGradient>
+        <rect id="acxl4oe1ja" width="587" height="296" x="0" y="0" rx="70"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(0 -2275) translate(-402 2263) translate(335 12)">
+                    <mask id="0khtm5pj8c" fill="#fff">
+                        <use xlink:href="#acxl4oe1ja"/>
+                    </mask>
+                    <use fill="url(#0p3fwz1ahb)" xlink:href="#acxl4oe1ja"/>
+                    <g mask="url(#0khtm5pj8c)">
+                        <g>
+                            <g>
+                                <path stroke="#91C45D" stroke-width="6.24" d="M233.494 424.736l-122-300.164 122 300.164z" filter="url(#r3p2jx5ktd)" transform="rotate(-71 11.13 514.818) translate(138.477 172.211)"/>
+                                <path stroke="#71CDDD" stroke-width="1.24" d="M479.652 341.021L278.178 319.213 111.652 126.446" filter="url(#9emow2313e)" transform="rotate(-71 11.13 514.818) translate(138.477 172.211)"/>
+                                <g opacity=".615" transform="rotate(-71 11.13 514.818) translate(138.477 172.211) rotate(37 -318.93 615.727)">
+                                    <mask id="psqn62hroh" fill="#fff">
+                                        <use xlink:href="#s7pkjubb8f"/>
+                                    </mask>
+                                    <path stroke="#00B6CB" stroke-width="59.28" d="M53.76 29.247L191.43 111.43" filter="url(#hh9merhhjg)" mask="url(#psqn62hroh)"/>
+                                </g>
+                                <g opacity=".375" transform="rotate(-71 11.13 514.818) translate(138.477 172.211) rotate(-142 203.632 189.02)">
+                                    <mask id="1d5yypzbck" fill="#fff">
+                                        <use xlink:href="#jf8y5uhbpi"/>
+                                    </mask>
+                                    <path stroke="#23A7B5" stroke-width="59.28" d="M60.65 33.084l177.49 105.467" filter="url(#r1zzcywllj)" mask="url(#1d5yypzbck)"/>
+                                </g>
+                                <g opacity=".479">
+                                    <g transform="rotate(-71 11.13 514.818) translate(138.477 172.211) translate(78.335 .342) rotate(168 187.047 196.455)">
+                                        <mask id="jk2ea5mtqn" fill="#fff">
+                                            <use xlink:href="#v2rjy47enl"/>
+                                        </mask>
+                                        <path stroke="#00B6CB" stroke-width="59.28" d="M45.767 14.963L183.349 97.2" filter="url(#yca0bu6vim)" mask="url(#jk2ea5mtqn)"/>
+                                    </g>
+                                    <g transform="rotate(-71 11.13 514.818) translate(138.477 172.211) translate(78.335 .342) rotate(-160 225.816 160.215)">
+                                        <mask id="fvvbpza4qq" fill="#fff">
+                                            <use xlink:href="#txo4e8b0ao"/>
+                                        </mask>
+                                        <path stroke="#23A7B5" stroke-width="59.28" d="M200.418-3.323l185.93 92.714" filter="url(#nl0kfa8c5p)" mask="url(#fvvbpza4qq)"/>
+                                    </g>
+                                    <g transform="rotate(-71 11.13 514.818) translate(138.477 172.211) translate(78.335 .342) scale(-1 1) rotate(-49 191.227 854.13)">
+                                        <mask id="9xdfbmopvt" fill="#fff">
+                                            <use xlink:href="#9x4zcprvzr"/>
+                                        </mask>
+                                        <path stroke="#12A3B4" stroke-width="59.28" d="M292.742 93.558l264.16 131.888" filter="url(#pclkh21pos)" mask="url(#9xdfbmopvt)"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g transform="rotate(-71 11.13 514.818) translate(138.477 172.211) rotate(22 -208.75 613.195) rotate(168 188.327 180.514)">
+                                        <mask id="1vdr89mcfw" fill="#fff">
+                                            <use xlink:href="#z6zhsnorvu"/>
+                                        </mask>
+                                        <path stroke="#17708D" stroke-width="59.28" d="M45.796 14.953l137.669 82.182" filter="url(#coanczt05v)" mask="url(#1vdr89mcfw)"/>
+                                    </g>
+                                    <g transform="rotate(-71 11.13 514.818) translate(138.477 172.211) rotate(22 -208.75 613.195) rotate(-160 222.652 144.431)">
+                                        <mask id="cy80b02b3z" fill="#fff">
+                                            <use xlink:href="#edrh9n0iax"/>
+                                        </mask>
+                                        <path stroke="#17616B" stroke-width="59.28" d="M200.544-3.32L386.59 89.33" filter="url(#5tiob7l5ky)" mask="url(#cy80b02b3z)"/>
+                                    </g>
+                                    <g transform="rotate(-71 11.13 514.818) translate(138.477 172.211) rotate(22 -208.75 613.195) scale(-1 1) rotate(-49 160.538 838.333)">
+                                        <mask id="kujd8kfyiC" fill="#fff">
+                                            <use xlink:href="#euucm8opmA"/>
+                                        </mask>
+                                        <path stroke="#23A7B5" stroke-width="59.28" d="M292.926 93.495l264.327 131.8" filter="url(#8blec4twbB)" mask="url(#kujd8kfyiC)"/>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g transform="rotate(-71 11.13 514.818) translate(138.477 172.211) translate(154.703 134.642) rotate(168 185.687 170.211)">
+                                        <mask id="uggljvtf8F" fill="#fff">
+                                            <use xlink:href="#uq3ahvqhyD"/>
+                                        </mask>
+                                        <path stroke="#23A7B5" stroke-width="59.28" d="M45.791 14.974l137.655 82.298" filter="url(#3ymqybdoiE)" mask="url(#uggljvtf8F)"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <path fill="url(#r3p6lzoeqG)" fill-rule="nonzero" d="M-85.557 745.176L698.386 135.637 749.251 111.666z" filter="url(#uzopzfofyH)" opacity=".326" transform="rotate(-71 11.13 514.818) rotate(88 331.847 428.42)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

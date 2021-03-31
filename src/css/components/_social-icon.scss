@@ -1,0 +1,45 @@
+.social-icon {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px;
+  vertical-align: bottom;
+  &:first-child {
+    margin-left: 0;
+  }
+  @media screen and (min-width: $breakpoint-sm) {
+    margin: 0 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &.discord {
+    background-color: #7289da;
+  }
+  &.twitter {
+    background-color: #54adee;
+  }
+  &.medium {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  &.youtube {
+    background-color: #cd1313;
+  }
+  &.reddit {
+    background-color: #ff4500;
+  }
+  &.facebook {
+    background-color: #3b5997;
+  }
+  &.github {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  &.envelope {
+    background-color: #ef8102;
+  }
+}

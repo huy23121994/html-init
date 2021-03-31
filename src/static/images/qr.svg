@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-625 -460) translate(625 460)">
+                <rect width="46" height="46" fill="#000" rx="7"/>
+                <g>
+                    <g>
+                        <path fill="#FFF" fill-rule="nonzero" d="M22.5 24.375L24.375 24.375 24.375 26.25 22.5 26.25z" transform="translate(8 8) rotate(-90 23.438 25.313)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M16.875 20.625L18.75 20.625 18.75 22.5 16.875 22.5z" transform="translate(8 8) rotate(-90 17.813 21.563)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M16.875 28.125L20.625 28.125 20.625 26.25 18.75 26.25 18.75 24.375 16.875 24.375z" transform="translate(8 8)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M23.437 21.562L27.187 21.562 27.187 23.437 23.437 23.437z" transform="translate(8 8) rotate(-90 25.312 22.5)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M26.25 24.375L28.125 24.375 28.125 28.125 24.375 28.125 24.375 26.25 26.25 26.25zM24.375 18.75L24.375 16.875 28.125 16.875 28.125 20.625 26.25 20.625 26.25 18.75zM22.5 18.75L20.625 18.75 20.625 22.5 18.75 22.5 18.75 24.375 22.5 24.375z" transform="translate(8 8)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M17.813 15.938L19.688 15.938 19.688 19.688 17.813 19.688z" transform="translate(8 8) rotate(-90 18.75 17.813)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M5.625 20.625H9.375V24.375H5.625z" transform="translate(8 8)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M13.125 28.125H1.875v-11.25h11.25v11.25zM3.75 26.25h7.5v-7.5h-7.5v7.5zM20.625 5.625H24.375V9.375H20.625z" transform="translate(8 8)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M28.125 13.125h-11.25V1.875h11.25v11.25zM18.75 11.25h7.5v-7.5h-7.5v7.5zM5.625 5.625H9.375V9.375H5.625z" transform="translate(8 8)"/>
+                        <path fill="#FFF" fill-rule="nonzero" d="M13.125 13.125H1.875V1.875h11.25v11.25zM3.75 11.25h7.5v-7.5h-7.5v7.5z" transform="translate(8 8)"/>
+                        <path d="M0 0H30V30H0z" transform="translate(8 8)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

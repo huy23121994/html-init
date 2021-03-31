@@ -1,0 +1,144 @@
+.text-underline {
+  text-decoration: underline;
+}
+.semi-b {
+  font-weight: 600 !important;
+}
+.font-s-large {
+  font-size: 20px;
+}
+.font-s-normal {
+  font-size: 16px;
+}
+.font-s-medium {
+  font-size: 14px;
+}
+.font-s-small {
+  font-size: 12px;
+}
+.font-xs {
+  font-size: 10px;
+}
+.align-sub {
+  vertical-align: sub;
+}
+.fas {
+  vertical-align: middle;
+}
+.pointer {
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 40px;
+  min-width: 200px;
+  text-align: center;
+  border: 0;
+  outline: none;
+  &.btn-success {
+    background-color: $green;
+    color: #fff;
+    &:hover {
+      background-color: $green-1;
+      text-decoration: none;
+    }
+  }
+  &.btn-black {
+    background-color: $black;
+    color: #fff;
+    &:hover {
+      background-color: $dark;
+      text-decoration: none;
+    }
+  }
+}
+.hover-opacity {
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media screen and (min-width: $breakpoint-md) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.section {
+  &-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: 42px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      margin-top: 10px;
+      width: 130%;
+      height: 2px;
+      transform: translateX(-12%);
+      background-image: linear-gradient(to left, #00c289, #ffd01f);
+    }
+    &--left {
+      &::after {
+        width: 110%;
+        left: 0;
+        transform: translateX(0);
+      }
+    }
+    &--right {
+      &::after {
+        width: 110%;
+        right: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.scrollbar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #555;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: #ccc;
+  }
+
+  &::-webkit-scrollbar-corner {
+    display: none;
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  &.active {
+    display: block;
+  }
+}

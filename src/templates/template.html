@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.png" sizes="32x32">
+  <title>Krystal</title>
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a class="navbar-brand" href="index">
+          <img src="images/krystal.svg" alt="Krystal">
+        </a>
+
+        <div class="navbar-nav nav-right d-md-flex navbar-main">
+          <a class="navbar-brand" href="index">
+            <img src="images/krystal.svg" alt="Krystal">
+          </a>
+          <i class="close-icon fas fa-times"></i>
+          <div class="nav-item">
+            <a class="nav-link active" href="">Refferal Program</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="">Buy/Sell ETH</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="">FAQs</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="">Contact Us</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="">Blog</a>
+          </div>
+          <div class="nav-item mt-auto download d-md-none">
+            <template v-if="mobileOperatingSystem != 'Android' ">
+              <a href=""><img class="mr-3 mt-2" src="images/appstore.svg" width="140"></a>
+            </template>
+            <template v-if="mobileOperatingSystem != 'iOS' ">
+              <a href=""><img class="mr-3 mt-2" src="images/google-play.svg" width="140"></a>
+              <a href=""><img class="mr-3 mt-2" src="images/apk.svg" width="140"></a>
+            </template>
+          </div>
+          <div class="nav-item d-flex justify-content-between d-md-none mt-3">
+            <a class="social-icon discord" href="https://discord.gg/HdXWUb2pQM" target="_blank" data-toggle="tooltip"
+              title="Follow us on Discord">
+              <i class="fab fa-discord"></i>
+            </a>
+            <a class="social-icon twitter" href="https://twitter.com/kybernetwork" target="_blank" data-toggle="tooltip"
+              title="Follow us on Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="social-icon medium" href="https://blog.kyber.network/" target="_blank" data-toggle="tooltip"
+              title="Follow us on Medium">
+              <i class="fab fa-medium-m"></i>
+            </a>
+            <a class="social-icon youtube" href="https://www.youtube.com/channel/UCQ-8mEqsKM3x9dTT6rrqgJw"
+              target="_blank" data-toggle="tooltip" title="Follow us on Youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a class="social-icon reddit" href="https://www.reddit.com/r/kybernetwork/" target="_blank"
+              data-toggle="tooltip" title="Follow us on Reddit">
+              <i class="fab fa-reddit-alien"></i>
+            </a>
+            <a class="social-icon facebook" href="https://www.facebook.com/kybernetwork" target="_blank"
+              data-toggle="tooltip" title="Follow us on Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="social-icon github" href="https://github.com/kybernetwork" target="_blank" data-toggle="tooltip"
+              title="Follow us on Github">
+              <i class="fab fa-github-alt"></i>
+            </a>
+            <a class="social-icon envelope" href="mailto:support@kyber.network" data-toggle="tooltip"
+              title="Submit a request">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a class="social-icon blockfolio" href="https://blockfolio.com/coin/KNC" target="_blank"
+              data-toggle="tooltip" title="Follow us on Blockfolio">
+              <img src="images/blockfolio.svg" alt="icon">
+            </a>
+          </div>
+        </div>
+
+        <ul class="navbar-nav nav-right d-flex d-md-none navbar-bars">
+          <li class="d-block d-md-none ml-auto pointer">
+            <img src="images/bars.svg" alt="">
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- build:banner -->
+
+  <!-- build:content -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <img class="footer-logo" src="images/krystal-white.svg" alt="kyberpro">
+        <ul>
+          <li>
+            <a href="https://developer.kyber.network/docs/KyberPro-Intro/" target="_blank">Home</a>
+          </li>
+          <li>
+            <a href="#kyberpro-resources">Tracker</a>
+          </li>
+          <li>
+            <a href="https://developer.kyber.network/docs/KyberPro-FAQs/" target="_blank">Overview</a>
+          </li>
+          <li>
+            <a href="https://discord.gg/7p7mR3v" target="_blank">FAQ</a>
+          </li>
+          <li>
+            <a href="mailto:deniz@kyber.network" target="_blank">Developer Chat</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom pt-4">
+        <a class="social-icon discord" href="https://discord.gg/HdXWUb2pQM" target="_blank" data-toggle="tooltip"
+          title="Follow us on Discord">
+          <i class="fab fa-discord"></i>
+        </a>
+        <a class="social-icon twitter" href="https://twitter.com/kybernetwork" target="_blank" data-toggle="tooltip"
+          title="Follow us on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="social-icon medium" href="https://blog.kyber.network/" target="_blank" data-toggle="tooltip"
+          title="Follow us on Medium">
+          <i class="fab fa-medium-m"></i>
+        </a>
+        <a class="social-icon youtube" href="https://www.youtube.com/channel/UCQ-8mEqsKM3x9dTT6rrqgJw" target="_blank"
+          data-toggle="tooltip" title="Follow us on Youtube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a class="social-icon reddit" href="https://www.reddit.com/r/kybernetwork/" target="_blank"
+          data-toggle="tooltip" title="Follow us on Reddit">
+          <i class="fab fa-reddit-alien"></i>
+        </a>
+        <a class="social-icon facebook" href="https://www.facebook.com/kybernetwork" target="_blank"
+          data-toggle="tooltip" title="Follow us on Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="social-icon github" href="https://github.com/kybernetwork" target="_blank" data-toggle="tooltip"
+          title="Follow us on Github">
+          <i class="fab fa-github-alt"></i>
+        </a>
+        <a class="social-icon envelope" href="mailto:support@kyber.network" data-toggle="tooltip"
+          title="Submit a request">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a class="social-icon blockfolio" href="https://blockfolio.com/coin/KNC" target="_blank" data-toggle="tooltip"
+          title="Follow us on Blockfolio">
+          <img src="images/blockfolio.svg" alt="icon">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+  <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+  <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+/* ============ Fonts ============ */
+$font-base: "Lato", sans-serif;
+/* ============ Colors ============ */
+$black: rgb(1, 1, 1);
+$gray: rgb(100, 100, 100);
+$dark: rgb(20, 20, 20);
+$dark-1: rgb(51, 51, 51);
+$dark-2: rgb(151, 151, 151);
+$white: #ffffff;
+$gray-1: #f6f6f6;
+$gray-2: rgb(184, 184, 184);
+$gray-3: rgb(153, 153, 153);
+$gray-4: rgb(246, 246, 246);
+$gray-5: rgb(200, 200, 200);
+$green: rgb(42, 141, 81);
+$green-1: rgb(37, 117, 69);
+$green-2: rgb(7, 44, 21);
+$red: rgb(253,79,48);
+$green-secondary: #28b173;
+$sky: #a0e3f0;
+$weak : #d1f0f7;
+$weakest : #115b74;
+$media-bg: #cccccc;
+$bg-gradient-01: linear-gradient(96deg, #000000 3%, #003243 99%);
+$bg-gradient-02: linear-gradient(96deg, #003243 3%, #000000 99%);
+
+/* ============ Breakpoints ============ */
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+$breakpoint-xs: 0;
+
+$breakpoint-swiper: 1120px;
+
+/* ============ Settings ============ */
+$image-path: "~src/images/";
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1200px,
+);
+$grid-breakpoints: (
+  xs: $breakpoint-xs,
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+);
+// $grid-gutter-width: 20px;
+
+$theme-colors: (
+  gray: $gray-2,
+  success: $green,
+  info: #00b6cb,
+  sky: $sky,
+  weak: $weak,
+  weakest: $weakest,
+  danger: #ef8100,
+);
